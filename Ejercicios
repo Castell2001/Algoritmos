@@ -1,0 +1,9 @@
+//Ejercicio 1: imprimir todos los numeros decimales , del 0 al 9, utilizando una repeticion 
+var suma= 0.1; 
+var a=1;
+for (var a=o; a<=9; a+0.1){
+    a = parseFloat(a) + parseFloat(suma); 
+    console.log(+a)
+}
+
+
