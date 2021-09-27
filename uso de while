@@ -1,0 +1,37 @@
+class program  {
+
+
+
+void volver(){
+    turnleft();
+    turnleft();
+    while(frontIsClear){
+    move();
+ }
+    while(anyBeepersInBeeperBag){
+    putbeeper();
+ }
+ }
+ void toma() {
+     while(nextToABeeper){
+     pickbeeper();
+ }
+ }
+ void juntar(){
+     while(nextToABeeper && frontIsClear){
+     toma();
+     move();
+
+
+
+  if(frontIsBlocked || notNextToABeeper){
+      toma();
+      volver();
+      turnleft();
+  if(frontIsBlocked && facingEast){
+      turnoff();
+ }
+      move();
+      turnleft();
+
+
